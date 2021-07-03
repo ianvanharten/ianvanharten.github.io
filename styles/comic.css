@@ -1,0 +1,37 @@
+.comic-area {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    margin: 30px auto;
+    width: 70%;
+}
+
+.panel {
+    height: auto;
+    max-width: 700px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.note {
+    font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .comic-area {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .panel {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}

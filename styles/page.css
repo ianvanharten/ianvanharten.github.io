@@ -1,0 +1,315 @@
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.4em;
+}
+
+main h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+main h1 a:hover {
+    text-decoration: underline;
+}
+
+main h1 a:visited {
+    color: black;
+}
+
+/* About Page */
+.page-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #fcfcfc;
+    margin: 30px auto;
+    width: 70%;
+}
+
+.page-text p {
+    line-height: 1.6em;
+}
+
+.page-text h3 {
+    font-weight: normal;
+}
+
+.page-text h4 {
+    font-size: 23px;
+}
+
+.page-text h5 {
+    font-size: 21px;
+}
+
+.profile-image {
+    height: 300px;
+    border-radius: 50%;
+    float: right;
+    margin: 30px 60px;
+}
+
+.comic-image {
+    height: 200px;
+    float: left;
+    margin: 5px 50px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.band-image {
+    height: 300px;
+    margin: 20px;
+}
+
+.band-image-2 {
+    height: 300px;
+    margin: 20px;
+}
+
+.band-poster-container {
+    text-align: center;
+}
+
+/* Book Page */
+.book-image {
+    height: 300px;
+    float: right;
+    margin: 60px 60px;
+}
+
+.quote {
+    padding: 20px;
+    margin: 5px auto;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 18px;
+}
+
+ol.headings {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+ol.headings li {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ol.headings li a {
+    text-decoration: none;
+    color: black;
+}
+
+ol.headings li a:hover {
+    text-decoration: underline;
+}
+
+.back-to-top {
+    background-color: #313131;
+    padding: 10px;
+    font-size: 16px;
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background-color: black;
+    transition: 1s;
+    cursor: pointer;
+    color: #fcfcfc;
+}
+
+.back-to-top:visited {
+    color: #fcfcfc;
+}
+
+.right-align {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Imaginary Inpho page */
+.ifo-flying {
+    display: block;
+    margin: 0 auto;
+    height: 115px;
+    animation: spaceshipInpho 4s infinite ease;
+}
+
+.inpho-drawing {
+    display: block;
+    margin: 20px auto;
+    height: 170px;
+}
+
+.animation {
+    margin: 0 132px;
+}
+
+.squares-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.square-row {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.square-comic {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 40px;
+    padding: 10px;
+    height: 300px;
+    cursor: pointer;
+    background-color: white;
+    transition: box-shadow 0.5s ease;
+}
+
+.square-comic:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+    transition: 0.5s ease;
+}
+
+@keyframes spaceshipInpho {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Education page */
+.container {
+    margin: 10px auto;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+
+.container-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.item {
+    text-align: center;
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 15px;
+    width: 325px;
+    padding: 20px;
+}
+
+.conestoga {
+    max-width: 80%;
+    min-width: 350px;
+    flex-grow: 3;
+    margin: 15px;
+}
+
+.skills {
+    width: 80%;
+    margin: 20px auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    list-style-type: none;
+}
+
+.conestoga-logo {
+    height: 150px;
+    margin: 20px;
+}
+
+.logo {
+    height: 130px;
+    margin: 20px;
+}
+
+.book-cover {
+    height: 200px;
+    margin: 50px 20px;
+}
+
+/* Projects page */
+.project {
+    margin: 15px auto;
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-link {
+    display: block;
+    margin: 15px 25px;
+    width: 450px;
+}
+
+.project img {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.project-description {
+    margin: 25px;
+}
+
+/* Responsive mobile view */
+@media (max-width: 1000px) {
+    .about-text {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .panel {
+        width: 400px;
+        height: auto;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .project-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-link {
+        width: 300px;
+        margin: 5px auto;
+    }
+}
