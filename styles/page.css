@@ -288,11 +288,29 @@ ol.headings li a:hover {
     margin: 25px;
 }
 
+@media (max-width: 1450px) {
+    .project-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-link {
+        width: 450px;
+        margin: 5px auto;
+    }
+}
+
 /* Responsive mobile view */
 @media (max-width: 1000px) {
     .about-text {
         width: 95%;
         margin: 10px auto;
+    }
+
+    .page-text {
+        width: 95%;
+        margin: 10px auto;
+        padding: 5px;
     }
 
     .panel {
@@ -302,9 +320,8 @@ ol.headings li a:hover {
         padding: 10px;
     }
 
-    .project-info {
-        flex-direction: column;
-        justify-content: center;
+    .project {
+        margin: 3px;
     }
 
     .img-link {
