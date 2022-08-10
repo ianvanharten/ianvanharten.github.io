@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Site Menu */
+
+.menu {
+    margin: 50px;
+    line-height: 2rem;
+
+}
+
+.menu h1 {
+    font-size: 2.25em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    animation: titleSkew 1s ease;
+}
+
+header {
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main Content */
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.4em;
+}
+
+main h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+main h1 a:hover {
+    text-decoration: underline;
+}
+
+main h1 a:visited {
+    color: black;
+}
+
+a {
+    color: #1474e0;
+}
+
+a:hover {
+    color: #0b3d75;
+}
+
+a:visited {
+    color: #0b3d75;
+}
+
+
+
+/* Footer */
+footer p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+}
+
+
+/* Animations */
+@keyframes titleSkew {
+    0% {
+        transform: skewX(0deg);
+    }
+
+    30% {
+        transform: skewX(10deg);
+    }
+
+    60% {
+        transform: skewX(-10deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+/* Responsive navbar */
+
+@media (max-width: 800px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    .site-name a {
+        padding: 25px 10px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    nav li a {
+        padding: 15px;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .explainer {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1450px) {
+
+}
+
+/* Responsive mobile view */
+@media (max-width: 1000px) {
+
+}
