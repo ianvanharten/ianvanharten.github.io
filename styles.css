@@ -14,6 +14,10 @@
     --green: #1d5f39;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', serif;
     color: var(--off-white);
@@ -62,6 +66,17 @@ nav a {
     margin: 0 10px;
 }
 
+.icon-links {
+    display: flex;
+    margin: 25px 10px;
+}
+
+.icon-links img {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+
 /* Main Content */
 
 main {
@@ -82,7 +97,7 @@ main h1 {
     margin: 25px auto;
     padding: 25px;
     width: 80%;
-    max-width: 850px;
+    max-width: 900px;
     height: auto;
     background-color: var(--dark-grey);
     box-shadow: -15px 15px 4px var(--brown);
@@ -106,10 +121,8 @@ main h1 {
 
 /* Footer */
 footer p {
-    clear: both;
+    margin: 20px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.1em;
 }
 
 

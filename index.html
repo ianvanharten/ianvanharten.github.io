@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Ian Van Harten's web developer portfolio website.">
-    <meta name="keywords" content="Ian Van Harten, web developer, software developer, freelance, portfolio">
+    <meta name="keywords" content="Ian Van Harten, web developer, software developer, portfolio, comics, podcaster">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <title>Ian Van Harten</title>
 </head>
@@ -15,22 +16,33 @@
         <a href="index.html">
             <h1>Ian Van Harten</h1>
         </a>
-        <a href="#">
+        <a href="#web-development">
             <img src="images/programmer.png" class="icon" />
             <h3>Web Development</h3>
         </a>
-        <a href="#">
+        <a href="#comics">
             <img src="images/artist.png" class="icon" />
             <h3>Comics</h3>
         </a>
-        <a href="#">
+        <a href="#podcast">
             <img src="images/podcaster.png" class="icon" />
-            <h3>Podcasting</h3>
+            <h3>Podcast</h3>
         </a>
+        <div class="icon-links">
+            <a href="https://github.com/ianvanharten/" target="_blank">
+                <img src="images/github_icon.png" alt="link to github" />
+            </a>
+            <a href="https://www.linkedin.com/in/ian-van-harten" target="_blank">
+                <img src="images/linkedin_icon.png" alt="link to linkedin" />
+            </a>
+            <a href="https://www.instagram.com/inphocomics/" target="_blank">
+                <img src="images/instagram_icon_white.png" alt="link to instagram"  />
+            </a>
+        </div>
     </nav>
 
     <main>
-        <div class="card">
+        <div class="card" id="web-development">
             <div class="card-title">
                 <img src="images/programmer.png" />
                 <h2>Web Development</h2>
@@ -40,7 +52,7 @@
             <p>&#8226; GiveWise - a digital Donor Advised Fund, enabling donors to give to the charities they wish to support from one centralized account.</p>
             <p>&#8226; Technologies: React, Node, Express, Nest, and GraphQL</p>
         </div>
-        <div class="card">
+        <div class="card" id="comics">
             <div class="card-title">
                 <img src="images/artist.png" />
                 <h2>Comics</h2>
@@ -48,22 +60,28 @@
             <p>Inpho Comics is a website I started to explore and discuss people
                 and ideas from throughout history that I find fascinating.</p>
             <p>Here are some examples:</p>
-            <p><a href="#">Marshall Mcluhan and the Electric Age</a></p>
-            <p><a href="#">Language and Totalitarianism, with George Orwell</a></p>
-            <p><a href="#">Dr. Seuss Goes to War</a></p>
+            <p><a href="https://www.inphocomics.com/comic/21-marshall-mcluhan" target="_blank">Marshall Mcluhan and the Electric Age</a></p>
+            <p><a href="https://www.inphocomics.com/comic/17-language-and-totalitarianism" target="_blank">Language and Totalitarianism, with George Orwell</a></p>
+            <p><a href="https://www.inphocomics.com/comic/19-dr-seuss-goes-to-war" target="_blank">Dr. Seuss Goes to War</a></p>
         </div>
-        <div class="card">
+        <div class="card" id="podcast">
             <div class="card-title">
                 <img src="images/podcaster.png" />
-                <h2>Podcasting</h2>
+                <h2>Podcast</h2>
             </div>
             <p>I host and co-produce a podcast called <i>Strays, Orphans, and Exiles</i>,
                 which is about the Two Rivers Church community in Guelph, ON.</p>
             <p>We bring together stories, questions, and conversation about what it means to be part of a church in the 21st century.</p>
-            <p>You can <a href="#">listen to the podcast on our website</a>, as well as on <a href="#">Spotify</a>,
-                <a href="#">Apple Podcasts</a>, and <a href="#">Pocket Casts</a>.</p>
+            <p>You can <a href="https://www.tworiverschurch.ca/podcast" target="_blank">listen to the podcast on our website</a>, as well as on
+                <a href="https://open.spotify.com/show/6DCLtrRep9N9gyd25JZWsG" target="_blank">Spotify</a>,
+                <a href="https://podcasts.apple.com/us/podcast/strays-orphans-and-exiles/id1606224458" target="_blank">Apple Podcasts</a>,
+                and <a href="https://pca.st/uqsfw0hz" target="_blank">Pocket Casts</a>.</p>
         </div>
     </main>
+
+    <footer>
+        <p>Copyright Ian Van Harten © 2022</p>
+    </footer>
 
 </body>
 
