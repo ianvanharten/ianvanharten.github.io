@@ -44,6 +44,12 @@ a {
 
 /* Site Menu */
 
+/* Main section  */
+/* left: 20vw;
+position: relative;
+width: 80vw; */
+/* Then set width of nav to 20vw */
+
 nav {
     margin: 40px 80px;
     line-height: 4rem;
@@ -58,21 +64,6 @@ nav a {
     display: flex;
     align-items: center;
     text-decoration: none;
-}
-
-.textShineBlack:hover {
-    background: linear-gradient(45deg, white, #c6ffdd, #fbd786, #abd6f3, white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    animation: textShine 3s ease-in-out infinite alternate;
-  }
-
-  @keyframes textShine {
-    to {
-        background-position: 200% center;
-    }
 }
 
 .icon {
@@ -134,7 +125,32 @@ main h1 {
     margin: 0 10px;
 }
 
+.tech-images, .comic-images, .podcast-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech-images img {
+    width: 80px;
+    height: auto;
+    margin: 10px 20px;
+}
+
+.podcast-image img {
+    width: 150px;
+    height: auto;
+    margin: 20px;
+}
+
+.comic-images img {
+    width: 110px;
+    height: auto;
+}
+
 /* Footer */
+
 footer p {
     margin: 20px;
     text-align: center;
@@ -142,6 +158,21 @@ footer p {
 
 
 /* Animations */
+
+.textShineBlack:hover {
+    background: linear-gradient(45deg, white, #c6ffdd, #fbd786, #abd6f3, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+  }
+
+@keyframes textShine {
+    to {
+        background-position: 200% center;
+    }
+}
 
 /* Responsive navbar */
 
