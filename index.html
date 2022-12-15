@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Ian Van Harten's web developer portfolio website." />
-    <meta name="keywords" content="Ian Van Harten, web developer, software developer, portfolio, comics, podcaster" />
+    <meta
+      name="keywords"
+      content="Ian Van Harten, web developer, frontend developer, software developer, portfolio, comics, podcaster"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
@@ -15,18 +18,21 @@
       <a href="index.html" class="textShineBlack">
         <h1>Ian Van Harten</h1>
       </a>
-      <a href="#web-development" class="textShineBlack">
-        <img src="images/programmer.png" class="icon" />
-        <h3>Web Development</h3>
-      </a>
-      <a href="#comics" class="textShineBlack">
-        <img src="images/artist.png" class="icon" />
-        <h3>Comics</h3>
-      </a>
-      <a href="#podcast" class="textShineBlack">
-        <img src="images/podcaster.png" class="icon" />
-        <h3>Podcast</h3>
-      </a>
+      <div class="sub-heading">Hi! I'm Ian 👋 and I help build things for the web!</div>
+      <div class="page-links">
+        <a href="#web-development" class="textShineBlack">
+          <img src="images/programmer.png" class="icon" />
+          <h4>Web Development</h4>
+        </a>
+        <a href="#personal-projects" class="textShineBlack">
+          <img src="images/artist.png" class="icon" />
+          <h4>Personal Projects</h4>
+        </a>
+        <a href="#contact" class="textShineBlack">
+          <img src="images/satellite.png" class="icon" />
+          <h4>Contact</h4>
+        </a>
+      </div>
       <div class="icon-links">
         <a href="https://github.com/ianvanharten/" target="_blank">
           <img src="images/github_icon.png" alt="link to github" />
@@ -41,12 +47,16 @@
     </nav>
 
     <main>
-      <div class="card" id="web-development">
-        <div class="card-title">
-          <img src="images/programmer.png" />
-          <h2 class="textShineBlack">Web Development</h2>
-        </div>
-        <p>As a co-op student working for Tag Digital Studios in Guelph, I contributed to a number of projects:</p>
+      <div class="section-header">
+        <img src="images/programmer.png" />
+        <h2 id="web-development">Web Development Experience</h2>
+      </div>
+
+      <div class="card">
+        <h3>📱 <span class="textShineBlack">Developer with Tag Digital Studios</span></h3>
+        <p>
+          Helped develop these projects as a co-op student with Tag Digital Studios in Guelph (January - August 2022):
+        </p>
         <p>
           &#8226;
           <a href="https://dialectic.solutions/learning-snippets/" target="_blank" class="textShineBlack"
@@ -69,14 +79,32 @@
           <img src="images/GraphQL_Logo.png" alt="GraphQL Logo" />
         </div>
       </div>
-      <div class="card" id="comics">
-        <div class="card-title">
-          <img src="images/artist.png" />
-          <h2 class="textShineBlack">Comics</h2>
-        </div>
+
+      <div class="card">
+        <h3>💾 <span class="textShineBlack">Developer with Vehikl</span></h3>
+        <p>Helped with the following as a software developer co-op with Vehikl in Waterloo (May - December 2021):</p>
+        <p>&#8226; developing client projects in a collaborative team environment specializing in mob programming</p>
         <p>
-          Inpho Comics is a website I started to explore and discuss people and ideas from throughout history that I
-          find fascinating.
+          &#8226; both hosting and participating in daily growth sessions with other developers in a mob programming
+          environment
+        </p>
+        <p>&#8226; Tech Stack: PHP and Laravel</p>
+        <div class="tech-images">
+          <img src="images/php.png" alt="PHP Logo" />
+          <img src="images/laravel.png" alt="Laravel Logo" />
+        </div>
+      </div>
+
+      <div class="section-header">
+        <img src="images/artist.png" alt="" />
+        <h2 id="personal-projects">Personal Projects</h2>
+      </div>
+
+      <div class="card">
+        <h3>💬 <span class="textShineBlack">Comics</span></h3>
+        <p>
+          Inpho Comics is a website I created to explore and discuss people and ideas from throughout history that I
+          find fascinating. Some examples include:
         </p>
         <p>
           <a href="https://www.inphocomics.com/comic/21-marshall-mcluhan" target="_blank" class="textShineBlack">
@@ -100,14 +128,12 @@
         <div class="comic-images">
           <img src="images/comic-inpho.png" alt="Cartoon Inpho" />
           <img src="images/comic-transforo.png" alt="Cartoon Transforo, Inpho's sidekick" />
-          <img src="images/comic-ifo.png" alt="Cartoon spaceship" />
+          <img src="images/comic-ifo.png" alt="Cartoon spaceship" class="spaceshipInpho" />
         </div>
       </div>
-      <div class="card" id="podcast">
-        <div class="card-title">
-          <img src="images/podcaster.png" />
-          <h2 class="textShineBlack">Podcast</h2>
-        </div>
+
+      <div class="card">
+        <h3>🎧 <span class="textShineBlack">Podcast</span></h3>
         <p>
           I host and co-produce a podcast called <i>Strays, Orphans, and Exiles</i>, which is about the Two Rivers
           Church community in Guelph, ON.
@@ -134,6 +160,35 @@
         </p>
         <div class="podcast-image">
           <img src="images/strays_orphans_expiles_podcast.jpg" alt="Strays, Orphans, and Exiles podcast art" />
+        </div>
+      </div>
+
+      <div class="section-header">
+        <img src="images/satellite.png" alt="" />
+        <h2 id="contact">Contact</h2>
+      </div>
+
+      <div class="card">
+        <p class="email">ivanharten5201@conestogac.on.ca</p>
+        <div class="social-links">
+          <div>
+            <a href="https://github.com/ianvanharten" target="_blank">
+              <p>GitHub</p>
+              <img src="images/github_icon.png" alt="GitHub Icon" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/ian-van-harten" target="_blank">
+              <p>LinkedIn</p>
+              <img src="images/linkedin_icon.png" alt="LinkedIn Icon" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/inphocomics/" target="_blank">
+              <p>Instagram</p>
+              <img src="images/instagram_icon_white.png" alt="Instagram Icon" />
+            </a>
+          </div>
         </div>
       </div>
     </main>
