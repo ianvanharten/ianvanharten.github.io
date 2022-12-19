@@ -318,6 +318,11 @@ footer p {
   .social-links {
     flex-direction: column;
   }
+
+  .card .email {
+    font-size: 0.9em;
+    margin: 10px auto;
+  }
 }
 
 /* Animations */
