@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap);
+
 * {
   margin: 0;
   padding: 0;
@@ -5,119 +7,158 @@
 }
 
 :root {
-  --off-white: #f7f7f7;
-  --dark-grey: #333;
-  --blue: #3c3cff;
+  --bg: #0b0f14;
+  --panel: #0f141b;
+  --border: rgba(255, 170, 0, 0.55); /* amber-ish like your screenshot border */
+  --glow: rgba(255, 170, 0, 0.18);
+  --text: #c8d2df;
+  --muted: #94a3b8;
+
+  --green: #7cfc98;
+  --cyan: #7dd3fc;
+  --amber: #fbbf24;
+  --pink: #fda4af;
+  --dim: rgba(200, 210, 223, 0.75);
+
+  --radius: 14px;
 }
 
+* {
+  box-sizing: border-box;
+}
+html,
 body {
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 20% 20%, rgba(59, 130, 246, 0.1), transparent 55%),
+    radial-gradient(900px 500px at 80% 30%, rgba(255, 170, 0, 0.08), transparent 60%), var(--bg);
+  color: var(--text);
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  display: grid;
+  place-items: center;
+  padding: 28px 16px;
+}
+
+/* Terminal window */
+.terminal {
+  width: min(1000px, 96vw);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 30%), var(--panel);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.02) inset, 0 0 36px var(--glow), 0 16px 48px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+
+/* Optional top bar (subtle) */
+.terminal__top {
   display: flex;
   align-items: center;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--dark-grey);
-  background-color: var(--off-white);
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.18);
 }
-
-a,
-a:visited {
-  color: var(--blue);
-}
-
-h1 {
-  font-size: 60px;
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: normal;
-}
-
-main {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.profile-image img {
-  width: 225px;
-  height: auto;
-}
-
-.title {
-  margin: 0 15px;
-}
-
-.links {
-  margin: 15px;
-}
-
-.links a {
+.dots {
   display: flex;
-  align-items: center;
-  margin: 20px 15px;
+  gap: 8px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+.terminal__title {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.2px;
+}
+
+.terminal__body {
+  padding: 18px 18px 22px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+/* Prompt line */
+.line {
+  display: block;
+}
+.prompt {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.6ch;
+  white-space: pre;
+}
+.userhost {
+  color: var(--amber);
+}
+.path {
+  color: var(--cyan);
+}
+.dollar {
+  color: var(--text);
+}
+.cmd {
+  color: var(--text);
+}
+
+.muted {
+  color: var(--dim);
+}
+.hint {
+  color: var(--muted);
+}
+.accent {
+  color: var(--cyan);
+}
+.ok {
+  color: var(--green);
+}
+.warn {
+  color: var(--amber);
+}
+
+/* Preformatted blocks */
+pre {
+  margin: 0;
+  white-space: pre;
+  overflow-x: auto;
+  padding-right: 8px;
+}
+
+/* Make long terminal blocks scroll nicely */
+pre::-webkit-scrollbar {
+  height: 10px;
+}
+pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Links that look terminal-ish */
+a {
+  color: var(--cyan);
   text-decoration: none;
-  color: var(--dark-grey);
+  border-bottom: 1px dotted rgba(125, 211, 252, 0.45);
+}
+a:hover {
+  border-bottom-style: solid;
 }
 
-.links img {
-  width: 70px;
-  height: auto;
-  margin-right: 20px;
-}
-
-.contact {
-  margin: 30px 15px;
-}
-
-.contact p {
-  font-style: italic;
-  margin: 10px 0;
-}
-
-footer p {
-  margin: 25px 15px 15px 15px;
-}
-
-/* Responsiveness */
-
-@media (max-width: 950px) {
-  main {
-    width: 80%;
+/* Small responsive adjustments */
+@media (max-width: 520px) {
+  .terminal__body {
+    font-size: 13px;
+    padding: 14px;
   }
-}
-
-@media (max-width: 600px) {
-  main {
-    width: 90%;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .profile-image img {
-    width: 150px;
-    height: auto;
-  }
-
-  .links img {
-    width: 60px;
-  }
-}
-
-@media (max-height: 610px) {
-  body {
-    height: auto;
-  }
-
-  .profile-image {
-    margin-top: 30px;
+  .terminal__title {
+    display: none;
   }
 }

@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Ian Van Harten's web developer portfolio website." />
-    <meta
-      name="keywords"
-      content="Ian Van Harten, web developer, frontend developer, software developer, portfolio, comics, podcaster"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your Name — Terminal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles.css" />
-    <title>Ian Van Harten</title>
   </head>
 
   <body>
-    <main>
-      <div class="profile-image">
-        <img src="images/profile.png" alt="cartoon podcaster sitting at the microphone" />
+    <main class="terminal" role="region" aria-label="Terminal portfolio">
+      <div class="terminal__top">
+        <div class="terminal__title">guest@localhost — portfolio</div>
       </div>
 
-      <div class="title">
-        <h1>Ian Van Harten</h1>
+      <div class="terminal__body">
+        <span class="line">
+          <span class="prompt">
+            <span class="userhost">guest@localhost</span>:<span class="path">~</span> <span class="dollar">$</span>
+            <span class="cmd">banner</span>
+          </span>
+        </span>
+
+        <pre aria-label="Banner output">
+██╗ █████╗ ███╗   ██╗    ██╗   ██╗ █████╗ ███╗   ██╗    ██╗  ██╗ █████╗ ██████╗ ████████╗███████╗███╗   ██╗
+██║██╔══██╗████╗  ██║    ██║   ██║██╔══██╗████╗  ██║    ██║  ██║██╔══██╗██╔══██╗╚══██╔══╝██╔════╝████╗  ██║
+██║███████║██╔██╗ ██║    ██║   ██║███████║██╔██╗ ██║    ███████║███████║██████╔╝   ██║   █████╗  ██╔██╗ ██║
+██║██╔══██║██║╚██╗██║    ╚██╗ ██╔╝██╔══██║██║╚██╗██║    ██╔══██║██╔══██║██╔══██╗   ██║   ██╔══╝  ██║╚██╗██║
+██║██║  ██║██║ ╚████║     ╚████╔╝ ██║  ██║██║ ╚████║    ██║  ██║██║  ██║██║  ██║   ██║   ███████╗██║ ╚████║
+╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝      ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝
+</pre
+        >
+
+        <div class="hint" style="margin-top: 10px">
+          Type <span class="accent">'help'</span> to see list of available commands.
+        </div>
+
+        <div class="muted" style="margin-top: 10px">
+          The project is open-source <span class="ok">✨</span> type <span class="accent">'repo'</span> to check out the
+          repository.
+        </div>
+
+        <div class="muted" style="margin-top: 10px">
+          <span class="warn">New</span> <span class="ok">⚡</span> Try out the new
+          <span class="accent">'theme'</span> command. See all available themes in the <a href="#">docs</a>.
+        </div>
+
+        <div style="margin-top: 14px"></div>
+
+        <div style="margin-top: 12px"></div>
+
+        <span class="line">
+          <span class="prompt">
+            <span class="userhost">guest@localhost</span>:<span class="path">~</span>
+            <span class="dollar">$</span>
+          </span>
+        </span>
       </div>
-
-      <div class="links">
-        <a href="https://inpho-comic.vercel.app/" target="_blank">
-          <img src="images/inpho-comics.png" alt="Imaginary Inpho Comics logo" />
-          <h2>Imaginary Inpho</h2>
-        </a>
-
-        <a href="https://podcasts.apple.com/ca/podcast/strays-orphans-and-exiles/id1606224458" target="_blank">
-          <img src="images/podcast-art.png" alt="Strays, Orphans, and Exiles podcast art" />
-          <h2>Strays, Orphans and Exiles Podcast</h2>
-        </a>
-
-        <a href="https://sirjohnai.longformnorth.com/" target="_blank">
-          <img src="images/sir-john-ai.png" alt="Sir John A Macdonald drawing" />
-          <h2>Sir John A. Macdonald AI Chatbot</h2>
-        </a>
-      </div>
-
-      <div class="contact">
-        <p>Email: ianvanharten (at) proton.me</p>
-        <p>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/ian-van-harten" target="_blank"
-            >https://www.linkedin.com/in/ian-van-harten</a
-          >
-        </p>
-      </div>
-
-      <footer>
-        <p>Ian Van Harten © <span class="year"></span></p>
-      </footer>
     </main>
-
-    <script>
-      document.querySelector('.year').innerHTML = new Date().getFullYear()
-    </script>
   </body>
 </html>
