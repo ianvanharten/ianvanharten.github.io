@@ -3,19 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Your Name — Terminal Portfolio</title>
+    <title>Ian Van Harten</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <main class="terminal" role="region" aria-label="Terminal portfolio">
-      <div class="terminal__top">
-        <div class="terminal__title">guest@localhost — portfolio</div>
-      </div>
+    <main>
+      <div class="top-bar"></div>
 
-      <div class="terminal__body">
+      <div class="terminal-body">
         <span class="line">
           <span class="prompt">
             <span class="userhost">guest@localhost</span>:<span class="path">~</span> <span class="dollar">$</span>
@@ -33,13 +31,34 @@
 </pre
         >
 
-        <div class="hint" style="margin-top: 10px">
-          Type <span class="accent">'help'</span> to see list of available commands.
-        </div>
+        <p class="warn" style="margin-top: 10px">About Me:</p>
 
-        <div class="muted" style="margin-top: 10px">
-          The project is open-source <span class="ok">✨</span> type <span class="accent">'repo'</span> to check out the
-          repository.
+        <div class="links">
+          <p class="warn" style="margin-top: 10px">Links:</p>
+
+          <p class="muted">
+            <span class="ok">⚡</span> <span class="accent">ReadWithFriends</span> - I built an app with Pocketbase and
+            Vue that lets you create reading plans and organize an online book club with your friends.
+          </p>
+
+          <p class="muted">
+            <span class="ok">⚡</span> <span class="accent">Imaginary Inpho</span> - Where I keep notes about certain
+            books I'm reading, plus some comics I've made.
+          </p>
+
+          <p class="muted"><span class="ok">⚡</span> <span class="accent">Strays, Orphans and Exiles</span></p>
+
+          <p class="muted"><span class="ok">⚡</span> <span class="accent">Longform North</span></p>
+
+          <p class="muted">
+            <span class="ok">⚡</span> <span class="accent">Music</span> - Here's some bands I listen to on Bandcamp,
+            and I played drums with this band
+          </p>
+
+          <p class="muted">
+            <span class="ok">⚡</span> <span class="accent">My All Time Reading List</span> - I've been keeping track of
+            every book I've read since 2009.
+          </p>
         </div>
 
         <div class="muted" style="margin-top: 10px">
