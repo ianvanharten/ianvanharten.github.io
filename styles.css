@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
 
 * {
   margin: 0;
@@ -82,5 +82,8 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 720px) {
+  body {
+    padding: 20px;
+  }
 }
