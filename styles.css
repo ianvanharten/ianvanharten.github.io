@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,119 +7,83 @@
 }
 
 :root {
-  --off-white: #f7f7f7;
-  --dark-grey: #333;
-  --blue: #3c3cff;
+  --background-colour: #282828;
+  --text-colour: #ebdbb2;
+  --orange: #fe8019;
+  --red: #fb4934;
+  --green: #b8bb26;
+  --yellow: #fabd2f;
+  --blue: #83a598;
+  --aqua: #8ec07c;
+  --purple: #d3869b;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0 auto;
+  max-width: 720px;
+  font-family: 'Cascadia Code', monospace;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  color: var(--dark-grey);
-  background-color: var(--off-white);
+  color: var(--text-colour);
+  line-height: 1.75;
+  background-color: var(--background-colour);
 }
 
-a,
-a:visited {
-  color: var(--blue);
-}
-
-h1 {
-  font-size: 60px;
-}
-
-h2 {
+.site-title {
+  margin: 20px 0;
   font-size: 22px;
-  font-weight: normal;
+  color: var(--orange);
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+hr {
+  border: 1px dashed var(--blue);
 }
 
 main {
-  width: 50%;
-  margin: 0 auto;
 }
 
-.profile-image img {
-  width: 225px;
-  height: auto;
+h2 {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--red);
 }
 
-.title {
-  margin: 0 15px;
+h3 {
+  font-size: 16px;
+  color: var(--aqua);
 }
 
-.links {
-  margin: 15px;
-}
-
-.links a {
-  display: flex;
-  align-items: center;
-  margin: 20px 15px;
-  text-decoration: none;
-  color: var(--dark-grey);
-}
-
-.links img {
-  width: 70px;
-  height: auto;
-  margin-right: 20px;
-}
-
-.contact {
-  margin: 30px 15px;
-}
-
-.contact p {
-  font-style: italic;
+p {
   margin: 10px 0;
 }
 
-footer p {
-  margin: 25px 15px 15px 15px;
+a {
+  color: var(--purple);
+  text-decoration: none;
 }
 
-/* Responsiveness */
-
-@media (max-width: 950px) {
-  main {
-    width: 80%;
-  }
+a:hover {
+  text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  main {
-    width: 90%;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .profile-image img {
-    width: 150px;
-    height: auto;
-  }
-
-  .links img {
-    width: 60px;
-  }
+footer {
+  margin: 20px 0;
+  text-align: center;
 }
 
-@media (max-height: 610px) {
+@media (max-width: 720px) {
   body {
-    height: auto;
-  }
-
-  .profile-image {
-    margin-top: 30px;
+    padding: 20px;
   }
 }
